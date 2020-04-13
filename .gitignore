@@ -105,3 +105,5 @@ dist
 
 # Node Package Lock file exclusion
 package-lock.json
+
+.now
