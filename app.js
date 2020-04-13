@@ -8,7 +8,6 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users/users');
 
 var app = express();
-const port = process.env.PORT || 5000;
 
 // view engine setup
 
@@ -36,8 +35,5 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
 });
 
-app.listen(port, ()=> {                     // server will run on specified port
-  console.log(`---Server running on ${port}---`);
-});
 
 module.exports = app;
