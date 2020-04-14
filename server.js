@@ -1,20 +1,30 @@
 var http = require('http');
 var debug = require('debug')('lowesbackend:server');
 var app = require('./app.js')
+var mongoose = require('mongoose')
+import loaders from './loaders'
 
 const port = process.env.PORT || 5000;
 app.set('port', port);
-
-// Initalizing http server to listen to requests 
 var server = http.createServer(app);
 
 /**
+ * Initalizing http server to listen to requests
  * Listen on provided port, on all network interfaces.
  */
+async function startServer(){
+    await loaders({ expressApp:app })
+    server.listen(port);
+    server.on('error', onError);
+    server.on('listening', onListening);
+    process.on('SIGINT', function(){
+        mongoose.connection.close(function(){
+          console.log("Mongoose default connection is disconnected due to application termination");
+           process.exit(0);
+          });
+    });
+}
 
-server.listen(port);
-server.on('error', onError);
-server.on('listening', onListening);
 
 /**
  * Event listener for HTTP server "error" event.
@@ -55,3 +65,5 @@ function onListening() {
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
 }
+
+startServer()
