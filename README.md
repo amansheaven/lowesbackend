@@ -5,7 +5,7 @@ Back-end Code for Lowe's Hackathon
 
 ## Modules
 
-NOW IS HELL BUG
+NOW IS HELL BU
 
 Resources :
 
