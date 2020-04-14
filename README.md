@@ -5,6 +5,7 @@ Back-end Code for Lowe's Hackathon
 
 ## Modules
 
+NOW IS HELL BUGGY
 
 Resources :
 
