@@ -6,9 +6,4 @@ describe('Entrypoint tests...', () => {
       .get('/')
     expect(res.statusCode).toEqual(200)
   })
-  it('Checking users boilerplate...', async () =>{
-      const res = await request(app)
-        .get('/users')
-      expect(res.statusCode).toEqual(200)
-  })
 })
