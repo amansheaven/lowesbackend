@@ -1,3 +1,6 @@
-var UserType = require('./UserType')
+var UserType = require('./UserType');
+var StoreType = require('./StoreType');
 
-module.exports = UserType
+var output = `${UserType}, ${StoreType}`
+
+module.exports = `${UserType}, ${StoreType}` ;

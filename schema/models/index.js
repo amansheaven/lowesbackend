@@ -1,5 +1,7 @@
-var User = require('./users')
+var User = require('./users');
+var Store =  require('./stores');
 
 module.exports = {
-    User
+    User,
+    Store
 }

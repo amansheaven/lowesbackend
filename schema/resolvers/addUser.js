@@ -1,9 +1,9 @@
 const { User } = require('../models')
 
 let addUser = async (root,args,context,info) => {
-        console.log("rootParams", root.inputs);
+        console.log("rootParams", root.input);
         
-        const uModel = new User(root.inputs);
+        const uModel = new User(root.input);
         const newUser = await uModel.save();
         console.log("Saved User");
         console.log(newUser);

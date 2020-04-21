@@ -5,7 +5,10 @@ const allQueries = require('./allQueries');
 const allMutations = require('./allMutations');
 const resolvers = require('./resolvers/index');
 
+console.log("this going in ",`${allQueries} ${allMutations} ${allTypes}`)
 const schema = buildSchema(`${allQueries} ${allMutations} ${allTypes}`);
+
+console.log("schema", schema);
 
 const express_graphiql = (req,res) => {
     return express_graphql({
