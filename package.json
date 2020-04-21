@@ -24,7 +24,8 @@
     "http-errors": "~1.6.3",
     "mongoose": "^5.9.7",
     "morgan": "~1.9.1",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "serve-favicon": "^2.5.0"
   },
   "devDependencies": {
     "jest": "^25.3.0",
