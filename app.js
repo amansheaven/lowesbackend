@@ -17,7 +17,7 @@ app.use(logger('dev'));
 // app.use(express.json());
 // app.use(express.urlencoded({ extended: false }));
 // app.use(cookieParser());
-app.use('/favicon.ico', express.static('./favicon.ico'));
+app.get('/favicon.ico', (req, res) => res.status(204));
 app.use(bodyParser.json());
 app.use(cors());
 
