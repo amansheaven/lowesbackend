@@ -14,7 +14,7 @@ const express_graphiql = (req,res) => {
     return express_graphql({
         schema:schema,
         rootValue: resolvers,
-        graphiql:true,
+        graphiql:process.env.GRAPHQL === "dev",
     })(req,res);
 };
 
