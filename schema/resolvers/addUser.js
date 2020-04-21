@@ -5,8 +5,8 @@ let addUser = async (root,args,context,info) => {
         
         const uModel = new User(root.input);
         const newUser = await uModel.save();
-        console.log("Saved User");
-        console.log(newUser);
+        // console.log("Saved User");
+        // console.log(newUser);
         if(!newUser) {
             throw new Error('Error');
         }

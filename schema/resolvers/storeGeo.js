@@ -14,7 +14,7 @@ let storeGeo = (root,args,context,info) => {
          }
         }
        }, (err, auth) => {
-            console.log("Fetched Stores");
+            console.log("Fetched GeoStores");
         });
 
 }
