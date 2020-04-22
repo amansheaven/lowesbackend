@@ -1,9 +1,6 @@
-const { Store } = require('../models')
+const { Store } = require('../models');
 
 let addStore = async (root,args,context,info) => {
-        console.log("doing it");
-        
-        console.log("rootParams", root.input);
         var inputs = {
             storeid: root.input.storeid,
             name: root.input.name,
