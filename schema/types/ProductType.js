@@ -5,6 +5,8 @@ type productData {
     name: String,
     row: Int,
     col: Int,
+    weight: Int,
+    tag: String,
     img: String
 }`;
 
@@ -13,7 +15,9 @@ input productInputData {
     pid: Int!,
     name: String!,
     row: Int,
-    col: Int
+    col: Int,
+    weight: Int,
+    tag: String,
     img: String
 }
 `

@@ -5,6 +5,8 @@ var ProductSchema = new mongoose.Schema({
     name: {type: String, required: [true, "can't be blank"]},
     row : Number,
     col : Number,
+    weight: Number,
+    tag : String,
     img : String,
 }, {timestamps:true});
 
