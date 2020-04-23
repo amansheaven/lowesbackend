@@ -1,4 +1,4 @@
-# Node.js Express SQL based backend server.
+# Node.js Express GraphQL based backend server.
 ![Run Tests](https://github.com/amansheaven/lowesbackend/workflows/Run%20tests/badge.svg)
 
 Back-end Code for Lowe's Hackathon
